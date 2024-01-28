@@ -1,0 +1,6 @@
+{
+  "MistralAIServiceOptions": {
+    "ApiKey": "Put your api key to here or to User Secret file"
+    ////,"ValidateApiOptions": false // if you want to skip options validation.
+  }
+}
