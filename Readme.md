@@ -4,7 +4,7 @@
 Install-Package TRS.AI.MistralAI
 ```
 
-Dotnet SDK for Mistral AI  
+Dotnet SDK for Mistral AI available via [Nuget](https://www.nuget.org/packages/TRS.AI.MistralAI)
 *Unofficial*. 
 *MistralAI doesn't have any official .Net SDK.*
 
