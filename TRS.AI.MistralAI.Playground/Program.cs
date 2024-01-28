@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using TRS.AI.MistralAI.Extensions;
 using TRS.AI.MistralAI.Interfaces;
+using TRS.AI.MistralAI.Playground.TestHelpers;
 
 var builder = new ConfigurationBuilder()
     .AddJsonFile("ApiSettings.json")
@@ -16,7 +17,7 @@ serviceCollection.AddMistralAIService();
 var serviceProvider = serviceCollection.BuildServiceProvider();
 var sdk = serviceProvider.GetRequiredService<IMistralAIService>();
 
-// await ChatCompletionTestHelper.RunSimpleChatCompletionTest(sdk);
+await ChatCompletionTestHelper.RunSimpleChatCompletionTest(sdk);
 // await ChatCompletionTestHelper.RunSimpleCompletionStreamTest(sdk);
 // await EmbeddingTestHelper.RunSimpleEmbeddingTest(sdk);
 // await ModelTestHelper.FetchModelsTest(sdk);
